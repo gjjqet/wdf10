@@ -1,0 +1,50 @@
+nav{
+    width: 1200px;
+    background-color: steelblue;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /* display: flex; */
+    
+}
+
+nav ul li{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */
+
+    text-align: center;
+    line-height: 50px; 
+
+    float: left;
+   
+
+    border-left: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+nav ul li:last-of-type{
+    border-right: 1px solid black;
+}
+
+/* nav ul li:first-of-type{
+    border-left: none;
+} */
+
+nav ul li:hover{
+    background-color: orange;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+

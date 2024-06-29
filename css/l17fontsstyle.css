@@ -1,0 +1,125 @@
+/*
+  (i) Local Machine Integration
+  (ii) Global Integration or Projet Folder Integration
+*/
+
+/*
+   Universal Selector
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+ @import url(l17add.css);  
+
+/* 
+*{
+  cursor: pointer;
+} */
+
+@font-face{
+  font-family: "bbc";
+  src:url("./../fonts/Whisper-Regular.ttf");
+}
+
+@font-face {
+  font-family: "aka";
+  src:local(akaya),url(./../fonts/akaya.ttf) format("woff");
+}
+
+
+.p2{
+  font-family: "bbc";
+  color:blue!important;
+  font-size: 30px;
+}
+
+
+/* *.p2{
+  color:green;
+} */
+
+
+
+/* Local Machine Intergration */
+
+/*body{
+  font-family: Arial;
+}*/
+
+/* .p1{
+  font-family: Arial
+} */
+
+/* .p3{
+  font-family: Arial;
+} */
+
+/* .p4{
+  font-family: "Time New Roman";
+} */
+
+/* .p2{ 
+  font-family: Century,Arial,"Time New Roman";
+} */
+
+
+
+/* Global Intergation or Project Folder Intergation */
+
+/* .p3{
+  font-family: Arial;
+} */
+
+/* .p1{
+  font-family: "Time New Roman";
+} */
+
+
+
+.p1{
+  font-family: "aka";
+  font-size: 30px;
+  
+}
+
+.clickme{
+  text-decoration: none;
+  color:green
+}
+
+.clickme:hover{
+  text-decoration: underline;
+}
+
+.clickme:visited{
+  color:red
+}
+
+.menutext{
+  border-radius: 15px;
+  font-family: Arial;
+  background-color: green;
+  text-decoration: none;
+  color:#fff;
+  /* padding: 10px 20px; */
+  padding: 10px 20px;
+  transition: background-color 2s,color 5s ;
+}
+
+.menutext:hover{
+  background-color: orange;
+  color:#000;
+}
+
+.imgdesign{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 2s;
+
+}
+
+.imgdesign:hover{
+  width: 100px;
+  height: 100px;
+}
+

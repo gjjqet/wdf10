@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+   <body>
+        <script type="text/javascript">
+            //(1)Regular Function
+
+            const regfun1=function (){
+                const num1=100;
+                return num1
+            };
+            console.log("this is regfun1 = "+regfun1());
+
+            //(2)Arrow Function
+
+            const arrfun1=()=>{
+                const num1=200;
+                return num1;
+            }
+
+            console.log("this is arrfun1 = "+arrfun1());
+
+            const arrfun2=(num1)=>{
+                return num1
+            };
+
+            console.log("thsi is arrfun2 = "+arrfun2(20))
+
+            const arrfun3=num1=>{
+                return num1
+            };
+
+            console.log("this is arrfun3 = "+arrfun3(30));
+
+           const arrfun4=num1=>num1+50;
+
+           console.log("this is arrfun4 = "+arrfun4(40));
+
+           const multiarrfun1=(num1,num2)=>{
+            const result=num1+num2;
+            return result
+           };
+
+           console.log("this is multiarrfun1 ="+multiarrfun1(40,70));
+
+
+           const multiarrfun2=(num1=30,num2=20)=>{
+            const result=num1+num2;
+            return result
+           };
+
+           console.log("this is multiarrfun2 ="+multiarrfun2());//50
+           console.log("this is multiarrfun2 ="+multiarrfun2(50))//70
+           console.log("this is multiarrfun2 ="+multiarrfun2(50,50))//100
+
+
+           const multiarrfun3=(num1=60,num2=30)=>num1+num2
+
+           console.log("this is multiarrfun2 ="+multiarrfun3());//90
+           console.log("this is multiarrfun2 ="+multiarrfun3(80,20));//100
+           console.log("this is multiarrfun2 ="+multiarrfun3(40));//70
+
+
+
+            
+        </script>
+   </body>
+</html>
+
+
+<!-- //(A)Default Function | System Function
+        //(B)User Define Function -->
+             <!-- (1)Regular Function
+                (i)Manual Function
+                (ii)Paramenter Function
+                      (a)Single Parameter Function
+                      (b)Multi Paramenter Function
+
+             (2)Arrow Function (ECMA 6)
+                    (i)Manual Function
+                    (ii)Paramenter Function
+                        (a)Single Parameter Function
+                        (b)Multi Paramenter Function
+
+             (3)Generator Function -->

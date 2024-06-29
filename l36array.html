@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            const arrgirls= new Array("su su","hla hla","mya mya");
+            console.log(arrgirls);
+            console.log(typeof arrgirls);
+
+            const arrboys=[
+                "mg mg","aung aung","kyaw gyi","zaw zaw",200
+            ];
+
+            console.info(arrboys);
+            console.table(arrboys);
+            console.warn(arrboys);
+            console.log(arrboys);
+
+            console.log(arrboys[1]);
+            console.log(arrboys[4]);
+            console.log(arrboys[arrboys.length-1]);//sing
+            console.log(arrboys[arrboys.length-3]);//kyaw gyi
+
+            let myarrs=["hello",1500,true,undefined,null,new Date(),["red","green"],{firstname:"kyaw kyaw",city:"yango"}];
+
+            console.log(myarrs[1]);
+            console.log(myarrs[5]);
+            console.log(myarrs[6][1]);
+            console.log(myarrs[7].city);
+
+            let colors=['red',"green","blue"];
+                colors=["rgba","hsla"];
+
+            console.info(colors);
+
+
+            let paints=[];
+
+            paints[0] = 'white';
+            paints[1] = "red";
+            paints[2]  = "gray";
+            paints[3]  =  "yellow";
+            paints[5]  =  "blue";
+            paints[0]="pink";
+
+
+            console.log(paints);
+            console.log(paints[4]);
+            console.log(paints[5]);
+
+
+            let animals=["cow","cat"];
+            animals[2]="dog";
+            animals[3]="owl";
+            animals[5]="tiger";
+            animals[0]="fish";
+
+            console.log(animals);
+
+
+            //Nested Array
+
+            const nestarrs=[
+                ["red","green","blue"],
+                ["cmyk","rgba","hsla"],
+                ["canon","epson",["laser","ink"]]
+            ];
+
+            console.log(nestarrs);
+            console.log(nestarrs.length);
+            console.log(nestarrs[0]);
+            console.log(nestarrs[1][1]);
+            console.log(nestarrs[2][2][0]);
+
+            
+
+
+        </script>
+    </body>
+</html>

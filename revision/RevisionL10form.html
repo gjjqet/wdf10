@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tag</title>
+    </head>
+    <body>
+        <fieldset>
+           <legend>This is form element</legend>
+       
+        <h1>Form Element</h1>
+        <form action="" method="">
+            <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name" autofocus/>
+        <br/><br/>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" class="" placeholder="Enter your last name" autocomplete="off"/>
+        <br/><br/>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" class="" placeholder="Enter your age" min="18"/>
+        <br/><br/>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="" placeholder="Enter your password" minlength="8" required/>
+        <br/><br/>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="genderm" class="" value="1"/><label for="genderm">Male</label>
+        <input type="radio" name="gender" id="genderf" class="" value="2"/><label for="genderf">Female</label>
+        <input type="radio" name="gender" id="gendero" class="" value="5" checked/><label for="gendero">Other</label>
+        <br/><br/>
+
+        <label>Fruit</label>
+        <input type="checkbox" name="fruit" id="fruitap" class="fruit" value="0"/><label for="fruitap">Apple</label>
+        <input type="checkbox" name="fruit" id="fruitor" class="" value="9" checked/><label for="fruitor">Orange</label>
+        <input type="checkbox" name="fruit" id="fruitpe" class="" value="3"/><label for="fruitpe">Pear</label>
+        <br/><br/>
+
+        <label>Country</label>
+        <select name="country" id="country" class="">
+            <option selected disabled>Choose Country</option>
+            <option value="6">Myanmar</option>
+            <option value="2">Thailand</option>
+            <option value="3">India</option>
+            <option value="4">Phillipies</option>
+        </select>
+        <br/><br/>
+
+        <label>Role</label>
+        <select name="role" id="role" class="" multiple>
+            <option>first</option>
+            <option>second</option>
+            <option>third</option>
+        </select>
+        <br/><br/>
+
+        <label>Date</label>
+        <input type="date" name="date" id="date" class=""/>
+        <br/><br/>
+
+        <label>Time</label>
+        <input type="time" name="time" id="time" class=""/>
+        <br/><br/>
+
+        <label>Appointment</label>
+        <input type="datetime-local" name="appt" id="appt" class=""/>
+        <br/><br/>
+
+        <label>Volume</label>
+        <input type="range" name="range" id="range" class="" value="0" min="0" max="100" step="20"/>
+        <br/><br/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="" placeholder="Enter your email"/>
+        <br/><br/>
+
+        <label for="nrc">NRC</label>
+        <input type="file" name="file" id="file" class="" accept="video/*" capture="user" multiple/>
+        <br/><br/>
+
+        <label for="img">Image File</label>
+        <input type="file" name="imagefile" id="img" class="" accept="image/*" capture="environment"/>
+        <br/><br/>
+        
+        <label>Bio</label>
+        <textarea name="bio" id="bio" class="" rows="5" placeholder="Enter your biography" spellcheck="off"></textarea>
+        <br/><br/>
+        
+        <input type="button" name="button" id="button" class="" value="Sign in"/>
+        <input type="reset" name="cancle" id="cancle" class="" value="Cancle"/>
+        <input type="submit" name="submit" id="submit" class="" value="Submit"/>
+
+        <br/><br/>
+        <button type="button" name="button" id="second" class="">Sign in</button>
+        <button type="reset" name="reset" id="reset" class="">Cancle</button>
+        <button type="submit" name="submit" id="submit" class="">Submit</button>
+        <br/><br/>
+        <input type="text" name="apple" id="apple" class="" hidden/>
+        <input type="hidden" name="orange" id="orange" class=""/>
+        
+        </form>
+    </fieldset>
+    </body>
+</html>
+
+<!--Stand alone attritube
+    
+    multiple
+    checked
+    hidden
+    required
+    disabled
+    selected
+-->
+
+<!--Input Type
+
+    radio
+    checkbox
+    email
+    date
+    time
+    datetime-local
+    range
+    file
+    button
+    reset
+    submit
+    password
+    text
+-->

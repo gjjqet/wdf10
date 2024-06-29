@@ -1,0 +1,81 @@
+=> git
+
+=>One times
+after git install
+git
+git --version      (git version 2.44.0)
+
+git config --global user.name "Tin Zar Lin"
+git config user.name
+
+git config --global user.email "gjjqet@gmail.com"
+git config user.email
+
+
+
+
+=>SSH (Secure Shell)
+
+ssh-keygen (enter 3 times)
+
+ssh -T git@github.com  (we can check ssh is successful or not by this comment)
+
+
+///home/dell/.ssh/id_ed25519.pub
+
+
+
+=>github
+(1 project 1 time)
+git init
+git remote add origin "git@github.com:gjjqet/pttsoftware.git"
+
+
+
+(as you like)
+git status         (enter)
+git add -A         (git add *)
+git status
+git commit -m "my first project"
+git status
+git push -u origin main
+
+
+=>Update
+git status
+git add *
+git status
+git commit -m "change software to project"
+get status
+git push -u origin master
+
+
+
+=>Clone
+git clone "reposity link"
+
+
+
+=>Pull
+creat folder
+git init
+git remote add origin "reposity link"
+git pull origin master
+
+
+
+
+
+
+
+
+
+Download
+
+1.git clone
+
+
+
+
+2.(creat folder) git bash here
+git pull origin master (enter)

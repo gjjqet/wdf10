@@ -1,0 +1,108 @@
+.bdstyle1{
+    border-style: solid;
+}
+
+.bdstyle2{
+    border-style: double;
+}
+
+.bdstyle3{
+    border-style: dotted;
+}
+
+.bdstyle4{
+    border-style: dashed;
+}
+
+.bdstyle5{
+    border-style: inset;
+}
+
+.bdstyle6{
+    border-style: outset;
+}
+
+.borderdesgin{
+    width: 300px;
+    height: 300px;
+    /*background:red*/
+    background-color: yellow;
+/*    border-style: solid;*/
+/*  border-radius: 50%;*/
+/*  border-radius: 150px;*/
+                  /*lt/rb  rt/lb*/
+/*  border-radius: 10px 50px;*/
+/*                lt    rt   rb   lb    */
+/*   border-radius: 20px 15px 50px 100px;*/
+/*          s     s     c */
+    border:5px solid red
+
+}
+
+ul{
+    /*list-style-type: none;*/
+    /*list-style: none;*/
+    /*border:1px solid red*/
+    border:2px dashed blue
+}
+
+li{
+   /* list-style-type: none;*/
+   /*list-style: none;*/
+   /*border: 1px solid red;*/
+   border:1px solid green;
+
+   /*list-style-type: square;*/
+   list-style-type: circle;
+  /* list-style-type: decimal*/
+  /*list-style-type: decimal-leading-zero;*/
+  
+ /* list-style-position:inside;*/
+ list-style-position: outside;
+  
+}
+
+
+/*Attribute Selector*/
+
+input[type="text"]{
+    width: 300px;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+}
+
+input[type="password"],input[type="email"]{
+   background-color:blue;
+   border-radius: 10px;
+}
+
+textarea[id="bio"]{
+   background-color: aqua;
+}
+
+body{
+    /* uniform resource locator*/
+    background-image: url(../image/fav/final.png);
+    /* background-repeat:repeat    */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*background-position: left top;*/
+    /*background-position: right bottom;*/
+    background-position: center;
+    background-attachment: fixed;
+
+    
+}
+
+
+
+
+/*
+  for (background)
+
+  1.solid color
+  2.image
+  3.gradient color
+*/

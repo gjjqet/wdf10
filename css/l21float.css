@@ -1,0 +1,50 @@
+/* Variable */
+/* System Properties */
+/* Custom Properties */
+
+:root{
+    --vo:green;
+    --re:red;
+    --li:linear-gradient(red,yellow);
+    --rgba:rgba(14, 47, 181, 0.8);
+    --bl:pink;
+    --wid:100px;
+}
+
+
+
+.div1{
+    
+    width: var(--wid);
+    height: 100px;
+    background-color:var(--vo);
+    float: left;
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: var(--bl);
+    float: left;
+}
+
+.div3{
+    width: 300px;
+    height: 300px;
+    background-color: var(--re);
+    float: left;
+}
+
+.div4{
+    width: 400px;
+    height: 400px;
+    background-color: var(--rgba);
+    float: left;
+}
+
+.div5{
+    width: 200px;
+    height: 200px;
+    background: var(--li);
+    float: left;
+}

@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control,.btn{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.message1,.message2{
+    margin: 10px 0;
+}

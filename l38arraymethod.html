@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Method</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let arrcolors=["red","green","blue","white","black","pink"];
+            console.log(arrcolors);
+            console.log(arrcolors.length);//6
+            console.log(arrcolors[3])//white
+
+            //indexOf()
+
+            console.log(arrcolors.indexOf("white"));//3
+            console.log(arrcolors.indexOf("pink"));//5
+            console.log(arrcolors.indexOf("Black"));//-1
+            console.log(arrcolors.indexOf("orange"));//-1
+
+            //Array.isArray
+
+            const name="aung aung";
+            console.log(Array.isArray(name));//false
+            console.log(Array.isArray(arrcolors));//true
+
+            //join("delimitor")
+            console.log(String(arrcolors));
+            console.log(arrcolors.toString());
+            console.log(arrcolors.join());
+            console.log(arrcolors.join("-"));
+            console.log(arrcolors.join("`"));
+            console.log(arrcolors.join("/"));
+
+
+            //push();
+            const candys=["red","green","blue","white","black"];
+
+            candys[5]="pink";
+            candys[4]="skyblue";
+
+            console.log(candys);
+
+            //push(value)   Note:Add new value to array (add to the end)
+
+            candys.push("violet");
+            candys.push("gray","orange","gold");
+
+
+            //unshift(value)    Noted: 
+
+            candys.unshift("tomato");
+            candys.unshift("potato");
+            candys.unshift("steelblue","sliver");
+            console.log(candys);
+
+
+            //shift()   Note::Remove value & index(take of from front)
+
+            candys.shift();
+            candys.shift();
+            console.log(candys);
+
+
+            //pop()  Note::Remove value & index(take of from end)
+
+            candys.pop();
+            candys.pop();
+            console.log(candys);//potato"
+
+
+
+            //delete    (Remove only value)
+
+            delete candys[1];
+            delete candys[2];
+            console.log(candys);
+
+
+            //splice(index,length)
+            const paints=candys.splice(0,5);
+            console.log(paints);
+
+
+            //concat()
+            const arr1=["aung aung","kyaw kyaw","tun tun","maung maung"];
+            const arr2=["su su","nu nu","yu yu","lu lu"];
+            const arr3=["20","30","40","50"];
+
+            console.log(arr1+arr2);//string
+            console.log(arr1.concat(arr2));
+            console.log(arr3.concat(arr2));
+
+
+
+            //sort() A to Z
+
+            const combinearrs=arr1.concat(arr2);
+            console.log(combinearrs[0]);
+            console.log(combinearrs[4]);
+
+            combinearrs.sort();
+            console.log(combinearrs)
+
+
+            //reverse()  It just reverse
+            console.log(combinearrs.reverse());
+
+
+            const arrunmbers=[200,700,500,300,100,30,90,30,400,3000];
+            console.log(arrunmbers.sort()); //not work
+            console.log(arrunmbers.reverse());//not work
+            console.log(arrunmbers.sort((a,b)=> a-b));
+            console.log(arrunmbers.sort((a,b)=>b-a));
+
+             
+            //callback function
+
+            console.log(arrunmbers.sort(function(a,b){
+                return a-b;
+            }));
+            
+
+            console.log(arrunmbers.sort(function(x,y){
+                return y-x;
+            }));
+
+            
+
+        </script>
+    </body>
+</html>

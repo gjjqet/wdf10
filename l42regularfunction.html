@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Function</title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 300px;
+                background-color: #f4f4f4;
+                padding:10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            }
+
+            label{
+                display: block;
+                margin:10px 0;
+            }
+
+            .form-control{
+                width: 100%;
+                padding: 5px;
+            }
+
+            .btn{
+                width: 100%;
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 5px;
+                background-color: darkblue;
+                color: #fff;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <h3>Show Name = <span id="replacename">Aung Aung</span></h3>
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="fistname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus/>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off"/>
+                </div>
+
+                <button type="button" class="btn" onclick="getdata()">Get Name</button>
+
+                
+            </form>
+        </div>
+
+
+        <script type="text/javascript">
+            //(i)Menual Function
+
+            function greet(){
+                console.log("Hello Myanmar")
+            };
+
+            greet();
+
+            hello();
+            function hello(){
+                console.log("Hello Yangon")
+            };
+
+            hello();
+
+            function hello(){
+                console.log("Hello Bago")
+            };
+
+            hello();
+
+            function funone(){
+                console.log("i am function one")
+            };
+
+           
+
+            function funtwo(){
+                funone();
+                console.log("i am function two");
+                funone()
+            };
+
+            function funtree(){
+                funtwo();
+                funone()
+            };
+
+            funtree();
+
+            // -------------------------------------------------------------------------------------------
+
+
+            //RETURN
+
+
+            function funfour(){
+                console.log(4)
+            }
+
+            function funfive(){
+                console.log(5)
+            };
+
+            funfive()
+            funfour();
+
+            function funsix(){
+                const num4=funfour();
+                const num5=funfive();
+
+                console.log(num4);//undefined
+                console.log(num5);//undefined
+
+                const total=num4+num5;
+                console.log(total);//NaN
+            };
+
+            funsix();
+
+            function funseven(){
+                // return 7;
+                // return 8;
+                // return 9;
+
+                var p=50;
+                var q=100;
+
+                if(p>q){
+                    return true;
+                }else{
+                    return false;
+                };
+            };
+
+            console.log(funseven());
+
+
+            function funeight(){
+                // const msg1="Hi";
+                // const msg2="nay kaung lar ?";
+                // const msg3="sarr pee pee lar ?";
+                // const msg4="mee lar lar ?";
+
+                // return "block";
+
+                //do
+                //const num8=800;
+                //return num8;//800
+
+                //do
+                // var num8;
+                // return num8=800;//800
+
+                //don't 
+                //return var num8;//error
+
+                //don't
+                //return var num8=800;//error
+            };
+
+            console.log(funeight());
+
+            function funnine(){
+                return 90;
+            };
+
+            function funten(){
+                var x=100;
+                return x;
+            }
+
+            console.log(funnine());//90
+            console.log(funten());//100
+
+            function funeleven(){
+                const num1=funnine();
+                const num2=funten();
+                console.log(num1,num2);
+                const total=num1+num2;
+                console.log(total);//190
+            }
+
+            funeleven();
+
+// --------------------------------------------------------------------------------------------------------
+
+            //(ii)Parameter Function
+                   //(a)Single Parameter Function
+
+           function myfun1(city){
+             console.log("Hello "+city)
+           };
+
+           myfun1("Mandalay");
+           myfun1("Yangon");
+           myfun1("Bago");
+           myfun1(500);
+           myfun1("Pwin Oo Lwin","Coos");
+
+
+           //Default parameter
+           function myfun2(country="Indonesia"){
+               console.log(`Hello ${country}`)
+           };
+
+           myfun2();
+           myfun2("Myanmar");
+           myfun2("India");
+           myfun2("Korea");
+           myfun2("China","Google")
+           myfun2();
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+     //(ii)Parameter Function
+         //(a)multi paramemter function
+
+
+    function multifun(x=1,y=3){
+        console.log(`x value is ${x},y value is ${y},z value is ${z}`)
+    }
+
+    multifun();
+    multifun(10,20,30);
+    multifun(20,30);
+    multifun();
+    //multifun(20, ,30)//error
+
+
+
+
+    function multifun3(x=1,y=2,z=3){
+        const result=x+y+z;
+        return result
+    };
+
+    console.log(multifun3());//NaN
+    console.log(multifun3(2,3));//8
+
+    // -------------------------------------------------------------------------------------------------
+
+    //Nameless Function
+
+    const infofun=function (name,color){
+        console.log(`My name is ${name},My fav color is ${color} color`)
+    };
+
+    infofun("aung aung","black");
+
+
+        function getdata(){
+            const getfirstname=document.getElementById("firstname").value;
+            const getlastname=document.getElementById("lastname").value;
+
+            const getreplacename=document.getElementById("replacename");
+
+            getreplacename.textContent=`${getfirstname} ${getlastname}`;
+
+            document.getElementById("firstname").value="";
+            document.getElementById("lastname").value="";
+
+            document.getElementById("firstname").focus();
+
+        }
+    
+        </script>
+
+    </body>
+</html>
+
+
+<!-- //(A)Default Function | System Function
+        //(B)User Define Function -->
+             <!-- (1)Regular Function
+                (i)Manual Function
+                (ii)Paramenter Function
+                      (a)Single Parameter Function
+                      (b)Multi Paramenter Function
+
+             (2)Arrow Function (ECMA 6)
+                    (i)Manual Function
+                    (ii)Paramenter Function
+                        (a)Single Parameter Function
+                        (b)Multi Paramenter Function
+
+             (3)Generator Function -->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date And Time</title>
+    </head>
+    <body>
+        <div>
+           <small> copyright <span id="autoyear">2023</span> Cable News network. A Warner Bros. Discovery Company. All Rights Reserved.</small>
+        </div>
+
+        <script text="text/javascript">
+            let date=new Date();
+           //console.log(date);
+           //console.log(new Date());
+
+           let getdate=new Date().getDate();
+           console.log("Date",getdate);
+
+           let hours=new Date().getHours();
+           console.log("Hour",hours);
+
+           let minute=date.getMinutes();
+           console.log("Minute",minute);
+
+           let second=date.getSeconds();
+           console.log("Second",second);
+
+           //jan 1 , 1970;
+           let time=date.getTime();
+           console.log("time",time);
+
+           //Date.now() = new Date().getTime
+           let now = Date.now();
+           console.log("time",now);
+
+           let month=date.getMonth();
+           console.log("month",month);
+
+           //["sun","mon","tue","wed","thu","fri","sat"]
+           let day=date.getDay();
+           console.log(day);
+
+
+           let getyear=date.getFullYear();
+           console.log(getyear);//2024
+
+
+           //Coordinate Univeral Time -12   +12(utc)     //+6:30 in Myanmar
+           let utcyear=date.getUTCFullYear();
+           console.log(utcyear);//2024
+
+        //    document.getElementById("autoyear").innerText=date.getFullYear();
+           document.getElementById("autoyear").textContent=date.getFullYear();
+
+        //    const full=document.getElementById("autoyear");
+        //    full.innerText=date.getFullYear();
+
+        let birthday=new Date(2023,6,23);
+        console.log(birthday);
+
+        const birthday2=new Date("7-23-2023 11:23:48");
+        console.log(birthday2);
+
+        const birthday3=new Date("8-23-2024 11:23:56");
+        console.log(birthday3);
+
+        birthday.setDate(25);
+        birthday.setMonth(4);
+        birthday.setHours(5);
+        birthday.setMinutes(30);
+        birthday.setSeconds(55);
+        birthday.setFullYear(2025);
+
+        console.log(new Date(2025,4,23,3,50,3))
+
+
+        </script>
+
+    </body>
+</html>
+
+<!-- 
+    --js->  js small app  ->  json object firebase  ->   es6  ->  react p1 ->   react p2  ->  nodejs p1  ->nodejs p2
+ -->

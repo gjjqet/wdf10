@@ -1,0 +1,52 @@
+h2{
+    color:red;
+}
+
+h3,h4{
+    color:green;font-size: 35px;
+}
+
+h5{
+    color:lightsalmon;
+    font-size: 30px;
+}
+
+#tha,i{color:red}
+
+#mdy{color:sienna}
+
+.sony{
+    color:aquamarine
+}
+
+.mi{
+    color:blueviolet
+}
+
+.sony,u{
+    color:blue
+}
+
+.phone{
+    font-size: 25px;
+}
+
+.iphone{
+    color:aqua
+}
+
+.nokia{
+    color:brown
+}
+.samsung{
+    color:red
+}
+
+
+/*
+ single selector
+ group selector
+
+ id selector
+ class selector
+*/

@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+   margin: 0;
+}
+
+.div1{
+    width: 600px;
+    height: 200px;
+    background-color: orange;
+
+    /* margin: 20px; */
+    /* margin: 20px 50px; */
+       /* top   right  bottom  left */
+    margin: 20px 50px 30px 100px;
+}
+
+.div2{
+    width: 600px;
+    height: 200px;
+    background-color: orange;
+
+    margin: 30px;
+}
+
+.div2 .bank,.div2 .coin{
+    background-color: green;
+    color:white;
+    display: block;
+}
+
+.display1{
+    width: 300px;
+    height: 100px;
+    background-color: silver;
+    border:2px solid orange;
+
+    /* opacity: .5; */
+    /* opacity: 0; */
+
+   /* visibility: hidden; */
+   /* visibility: visible; */
+
+   display: none;
+}
+
+.display2{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid silver;
+}

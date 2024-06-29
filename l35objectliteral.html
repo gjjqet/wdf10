@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Literals(Javascript Object)</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            let students={
+                firstname:"Honey",
+                middlename:"Nwe",
+                lastname:"Oo",
+                age:22
+            }
+
+            console.log(students);
+            console.info(students);
+            console.table(students);
+            console.warn(students);
+            console.log(students);
+
+            console.log(typeof students);
+            console.log(students.firstname);
+            console.log(students.middlename);
+            console.log(students.lastname);
+            console.log(students.age);
+            console.log(typeof (students.age));
+
+            const persons={
+                firstname:"Kyaw Kyaw",
+                lastname:"Htay Lwin",
+                age:43,
+                single:false,
+                email:"gjjqet@gmail.com",
+
+                hometown:{
+                    city:"Yangon"
+                },
+
+                address:{
+                    street:"62st",
+                    township:"Mandalay",
+                    actress:{
+                        country:"China"
+                    }
+                },
+
+                hobbies:[
+                    "sleep","music","eat","sport","sing"
+                ]
+            }
+
+
+            console.log(persons.age);
+            console.log(persons.hometown.city);
+
+            console.log(persons.single);
+            console.log(typeof (persons.single));
+            console.log(persons.address.street);
+            console.log(typeof persons.address.street);
+            console.log(persons.address.actress.country);
+
+            console.log(persons.hobbies[1]);
+            console.log(persons.hobbies[4]);
+            console.log(persons.hobbies.length);
+            console.log(persons.hobbies[persons.hobbies.length-1]);
+
+        </script>
+    </body>
+</html>
